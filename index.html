@@ -6,17 +6,20 @@
 </head>
 <body>
  <div>
- 	<audio>
- 		<source src="If Today Was Your Last Day.mp3" type="audio/mpeg">
+ 	<audio id ="myAudio">
+ 		<source src="If Today Was Your Last Day.mp3" type="audio/mpeg" id="nikel">
  	</audio><br/>
  	
- 	<button onclick="reproducir();">play</button>
- 	<button onclick="reproducir();">stop</button>
- 	<button onclick="reproducir();">pause</button>
- 	<button onclick="reproducir();">back</button>
- 	<button onclick="reproducir();">forward</button>
- 
+ 	<button onclick="controles(1);">play</button>
+ 	<button onclick="controles(2);">stop</button>
+ 	<button onclick="controles(3);">pause</button>
+ 	<button onclick="controles(4);">volume +</button>
+ 	<button onclick="controles(5);">volume -</button>
+ 	<button onclick="controles(6);">rewind</button>
+ 	<button onclick="controles(7);">forward</button>
+ 	<span id="currentTime">00:00:00</span> / <span id="duration">00:00:00</span>
  </div>
+   <input id ="progreso" width="300" height="20" type ="range" min ="0" max="200" step ="1" value="0"/>
 
 </body>
-</html>n
+</html>
